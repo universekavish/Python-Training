@@ -19,6 +19,7 @@ while True :
                 print('Same at : ', count)
             else :
                 differentLine.append(count)
+        count = count + 1
     print('different at ', differentLine)
     # i = 0; j = 0
     # while i < len(line) and j < len(line2) :
