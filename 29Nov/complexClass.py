@@ -13,7 +13,7 @@ class Complex :
         temp = Complex(self.rPart + other.rPart, self.iPart + other.iPart)
         return temp
     
-    def multiply(self, other) :
+    def __mul__(self, other) :
         return Complex(((self.rPart)*(other.rPart)) - ((self.iPart)*(other.iPart)), (self.rPart)*(other.iPart) + (self.iPart)*(other.rPart))
 		
     def conjugate(self) :
@@ -34,7 +34,7 @@ class Complex :
 C1 = Complex(2, 3)
 print(C1)
 
-C2 = Complex(3, -4)
+C2 = Complex(3, 4)
 print(C2)
 
 #1. same or not
@@ -46,7 +46,7 @@ C3 = C1 + C2
 print('Added : ', C3)
 
 #3. multiply
-C4 = C1.multiply(C2)
+C4 = C1*C2
 print('multiplied result ', C4)
 
 #4. Conjugate
