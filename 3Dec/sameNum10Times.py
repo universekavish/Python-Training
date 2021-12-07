@@ -1,19 +1,38 @@
+#import sys
 import random
-lenL = 0
-elements = []
-i = 0
-while i < 10:
-	element = random.randint(1, 100)
+l = []
+
+'''
+while True : 
+	
+	if len(l) == 10 : break
+	element1 = random.randint(1, 5)
 	while True : 
-		element2 = random.randint(1, 100)
-		if element2 == element :
-			elements.append(element2)
-			print('appended')
-			lenL = lenL + 1
+		if len(l) == 10 : break
+		element2 = random.randint(1, 5)
+	
+		if element2 == element1 :
+			l.append(element2)
+			print('appended ', element2)
+			print(l)
 		else :
-			elements.clear()
-			print('cleared')
-			lenL = 0
-			break
-	break
-print(elements)
+			l.clear()
+print(l)
+'''
+
+while True : 
+	
+	if len(l) == 10 : break
+	element1 = random.randint(1, 2)
+	while True : 
+		if len(l) == 10 : break
+		element2 = random.randint(1, 2)
+	
+		if element2 == element1 :
+			l.append(element2)
+			print('appended ', element2)
+			print(l)
+		else :
+			l.clear()
+			element1 = element2
+print(l)
